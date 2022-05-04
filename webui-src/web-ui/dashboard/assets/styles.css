@@ -1,0 +1,15 @@
+/* NeoLight Dashboard Stylesheet: nl-ui-v0.1 */
+
+body{
+    font-family: 'Segoe UI';
+    
+    margin: 0;
+}
+
+.widget-wrapper{
+    background-color: grey;     /*color for debug purposes*/
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
