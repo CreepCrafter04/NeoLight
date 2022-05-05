@@ -1,15 +1,50 @@
 /* NeoLight Dashboard Stylesheet: nl-ui-v0.1 */
 
+html{
+    height: 100vh;
+    width: 100vw;
+}
+
 body{
     font-family: 'Segoe UI';
-    
+    height: 100%;
+    width: 100%;
+
     margin: 0;
+}
+
+.main-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
 
 .widget-wrapper{
     background-color: grey;     /*color for debug purposes*/
 
-    width: 100vw;
-    height: 100vh;
+    max-height: 100%;
+    max-width: calc((1920/1080)*100vh);
+    min-width: 100px;
+    min-height: 200px;
+    flex-grow: 1;
+
     display: flex;
+    justify-content: safe center;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.widget{
+    background-color: white;     /*color for debug purposes*/
+
+    flex-basis: 600px;
+    flex-grow: 1;
+    height: 50%;
+    min-width: 200px;
+}
+
+.widget-alt{
+    flex-basis: 100%;
 }
