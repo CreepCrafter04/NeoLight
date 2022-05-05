@@ -25,7 +25,7 @@ body{
     background-color: grey;     /*color for debug purposes*/
 
     max-height: 100%;
-    max-width: calc((1920/1080)*100vh);
+    max-width: calc((1920/1080)*100vh);     /*set max width to a full hd aspect ratio based on height*/
     min-width: 100px;
     min-height: 200px;
     flex-grow: 1;
@@ -39,12 +39,48 @@ body{
 .widget{
     background-color: white;     /*color for debug purposes*/
 
-    flex-basis: 600px;
+    flex-basis: 500px;
     flex-grow: 1;
-    height: 50%;
+    height: 60%;
     min-width: 200px;
+
+    display: flex;
 }
 
 .widget-alt{
+    height: 40%;
     flex-basis: 100%;
+}
+
+.widget-content-wrapper{
+    background-color: gray;
+
+    margin: 10px;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.widget-title{
+    background-color: bisque;
+
+    height: 10%;
+    max-width: 100%;
+    align-self: stretch;
+    margin: 10px 10px 0 10px;
+}
+
+.widget-title-alt{
+    height: calc(10%*(60/40));      /*adjust title height to be equal with bigger widgets*/
+}
+
+.widget-content-container{
+    background-color: cadetblue;
+
+    flex-grow: 1;
+    max-width: 100%;
+    align-self: stretch;
+    margin: 0 10px 10px 10px;
 }
