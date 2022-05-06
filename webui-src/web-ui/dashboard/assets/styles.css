@@ -39,7 +39,7 @@ body{
 .widget{
     background-color: white;     /*color for debug purposes*/
 
-    flex-basis: 500px;
+    flex-basis: calc(((1920/1080)*100vh)/2.5);
     flex-grow: 1;
     height: 60%;
     min-width: 200px;
