@@ -15,7 +15,7 @@ body{
 
 .main-wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: safe center;
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -26,7 +26,7 @@ body{
 
     max-height: 100%;
     max-width: calc((1920/1080)*100vh);     /*set max width to a full hd aspect ratio based on height*/
-    min-width: 100px;
+    min-width: 300px;
     min-height: 200px;
     flex-grow: 1;
 
@@ -83,4 +83,16 @@ body{
     max-width: 100%;
     align-self: stretch;
     margin: 0 10px 10px 10px;
+
+    display: flex;
+    justify-content: safe center;
+    flex-wrap: wrap;
+}
+
+.widget-content{
+    background-color: white;
+    border: 1px solid red;
+    
+    flex-basis: calc(((1920/1080)*100vh)/5.5);
+    flex-grow: 1;
 }
