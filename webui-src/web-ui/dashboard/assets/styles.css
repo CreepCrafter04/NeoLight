@@ -55,12 +55,13 @@ body{
 .widget-content-wrapper{
     background-color: gray;
 
-    margin: 10px;
     flex-grow: 1;
+    max-width: 100%;
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    overflow: hidden;
 }
 
 .widget-title{
@@ -87,12 +88,32 @@ body{
     display: flex;
     justify-content: safe center;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .widget-content{
     background-color: white;
     border: 1px solid red;
-    
+
     flex-basis: calc(((1920/1080)*100vh)/5.5);
     flex-grow: 1;
+}
+
+.widget-content-alt{
+    background-color: white;
+    border: 1px solid red;
+
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.test-object{
+    height: calc(100%-2px);
+    width: 30vh;
+    flex-shrink: 0;
+    background-color: white;
+    border: 1px solid blue;
 }
