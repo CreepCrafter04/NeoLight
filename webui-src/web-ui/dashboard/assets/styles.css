@@ -86,6 +86,7 @@ body{
 
 .widget-title-alt{
     height: calc(10%*(60/40));      /*adjust title height to be equal with bigger widgets*/
+    margin-top: 0px;                /*no top margin for alternative widget*/
 }
 
 .widget-content-container{
